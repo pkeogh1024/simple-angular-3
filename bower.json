@@ -1,0 +1,17 @@
+{
+  "name": "simple-angular-3",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "pkeogh1024@yahoo.com <Tiesha Sims>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
