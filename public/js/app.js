@@ -120,7 +120,7 @@ app.controller ('MyApp.HttpRequestController',[
             })
         }
         $scope.delete = function (){
-            console.log ("Updating Posts");
+            console.log ("Deleting Posts");
             $http ({
                 url: 'http://localhost:3000/posts/' + $scope.post.id,
                 method: 'DELETE',
@@ -131,7 +131,7 @@ app.controller ('MyApp.HttpRequestController',[
                 console.log ('This is the error:', response);
             })
             .error (function (response){
-                console.error ('This is the error: ', response);
+                console.error ('This is the error:', response);
             })
         }
     }
