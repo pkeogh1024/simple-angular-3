@@ -33,6 +33,11 @@ app.config([
                 templateUrl: '/templates/request.html',
                 controller: 'MyApp.HttpRequestController'
             })
+            .state ('inventory',{
+                url: '/inventory',
+                templateUrl: '/templates/inventory.html',
+                controller: 'MyApp.HttpRequestController'
+            })
         ;
     }
 ]);
