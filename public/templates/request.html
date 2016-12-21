@@ -1,0 +1,55 @@
+<h2>Request</h2>
+
+
+<h3>Create Post</h3>
+    <form ng-submit="create ()">
+        <div>
+            <label>Title:</label>
+            <input ng-model= "post.title">
+        </div>
+        <div>
+            <label:>Author</Label>
+            <input ng-model= "post.author">
+        </div>
+        <button>Create Post</button>
+    </form>
+
+<h3>Read All Posts</h3>
+    <button ng-click="readAll ()">Read All</button>
+
+    <ul>
+        <li ng-repeat="item in postList">
+            <div>
+                <stong>Name</strong>{{item.title}}<br>
+                <stong>Id</strong>{{item.id}}<br>
+                <strong>Author</strong>{{item.author}}<br>
+            </div>
+        </li>
+    </ul>
+
+
+<h3>Update Posts</h3>
+<form ng-submit="update ()">
+    <div>
+        <label>Title:</label>
+        <input ng-model= "post.title">
+    </div>
+    <div>
+        <label:>Author</Label>
+        <input ng-model= "post.author">
+    </div>
+    <div>
+        <label>Id:</label>
+        <input ng-model="post.id">
+    </div>
+    <button>Update</button>
+</form>
+
+<h3>Delete Post</h3>
+<form ng-submit="delete ()">
+    <div>
+        <label>Id:</label>
+        <input ng-model="post.id">
+    </div>
+    <button>Delete Posts</button>
+</form>
